@@ -65,7 +65,7 @@ void Parameters::SetDefaults() {
 
 	maxcol = 32765; // max number of columns in sequence/MSA input files; must be <= LINELEN and >= maxres
 	maxres = 20001;           // max number of states in HMM; must be <= LINELEN
-	maxnumdb = 20000;          // max number of hits allowed past prefilter
+	maxnumdb = 60000;          // max number of hits allowed past prefilter
 
 	append = 0;                // overwrite output file
 	outformat = 0;             // 0: hhr  1: FASTA  2:A2M   3:A3M

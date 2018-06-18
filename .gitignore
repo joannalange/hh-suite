@@ -27,3 +27,5 @@ tags
 /Debug
 /build
 *__pycache__*
+
+scripts/*.pyc
