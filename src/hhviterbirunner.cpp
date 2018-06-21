@@ -106,7 +106,7 @@ std::vector<Hit> ViterbiRunner::alignment(Parameters& par, HMMSimd * q_simd,
         unsigned int seqBlockSize = allElementToAlignCount;
 
         if(alignment == 0 && par.early_stopping_filter){
-            seqBlockSize = 2000;
+            seqBlockSize = 60000;
         }
 
         for(unsigned int seqJunkStart = 0; seqJunkStart <  allElementToAlignCount; seqJunkStart += seqBlockSize ){

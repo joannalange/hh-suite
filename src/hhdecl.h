@@ -29,10 +29,10 @@ class Parameters;
 const char REFERENCE[]="Remmert M, Biegert A, Hauser A, and Soding J.\nHHblits: Lightning-fast iterative protein sequence searching by HMM-HMM alignment.\nNat. Methods 9:173-175 (2011).\n";
 const char COPYRIGHT[]="(C) Johannes Soeding, Michael Remmert, Andreas Biegert, Andreas Hauser\n";
 
-const int MAXSEQ=65535; //max number of sequences in input alignment (must be <~30000 on cluster nodes??)
+const int MAXSEQ=400000; //max number of sequences in input alignment (must be <~30000 on cluster nodes??)
 const int LINELEN=524288; //max length of line read in from input files; must be >= MAXCOL
-const int MAXRES=20000;
-const int MAXSEQDIS=10238;//max number of sequences stored in 'hit' objects and displayed in output alignment
+const int MAXRES=60000;
+const int MAXSEQDIS=400000;//max number of sequences stored in 'hit' objects and displayed in output alignment
 const int IDLEN=255;     //max length of scop hierarchy id and pdb-id
 const int DESCLEN=32765;//max length of sequence description (longname)
 const int NAMELEN=(PATH_MAX>512? PATH_MAX:512); //max length of file names etc., defined in limits.h
